@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KimMingyu의 지렁이게임</title>
+</head>
+<body>
+    <div class="score-container">
+        <div>점수: <span id="current-score">0</span></div>
+        <div>최고기록: <span id="high-score">0</span></div>
+    </div>
+    
+    <canvas id="gameCanvas" width="420" height="420"></canvas>
+    <div id="game-over">
+        게임 오버 ㅋ
+        <button id="restart-btn">다시하기</button>
+    </div>
+
+    <!-- 모바일 조작 방향 버튼 -->
+    <div class="mobile-controls">
+        <div class="row">
+            <button id="up-btn">위</button>
+        </div>
+        <div class="row">
+            <button id="left-btn">왼쪽</button>
+            <button id="down-btn">아래</button>
+            <button id="right-btn">오른쪽</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
